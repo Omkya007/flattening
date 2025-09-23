@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <select 
+            #user
+            name="" id="" class="form-control mb-4" (change)="fetchUserPosts(user.value)">
+                <option [value]="val" *ngFor="let val of[1,2,3,4,5,6,7,8,9,10]">
+                    {{val}}
+                </option>
+            </select>
+            <ng-container *ngIf="userI">
+                <h2>
+                {{userI.name}}
+            </h2>
+            <hr>
+            <ul class="list-group" *ngIf="postArr">
+                <li class="list-group-item" *ngFor="let post of postArr">
+                    {{post.title}}
+                </li>
+            </ul>
+            </ng-container>
+        </div>
+    </div>
+</div>
