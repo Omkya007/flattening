@@ -5,11 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MergeComponent } from './shared/components/merge/merge.component';
+import { MergeMapComponent } from './shared/components/merge-map/merge-map.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MergeComponent
+    MergeComponent,
+    MergeMapComponent
   ],
   imports: [
     BrowserModule,
