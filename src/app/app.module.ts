@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MergeComponent } from './shared/components/merge/merge.component';
 import { MergeMapComponent } from './shared/components/merge-map/merge-map.component';
+import { MermapProductsComponent } from './shared/components/mermap-products/mermap-products.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MergeComponent,
-    MergeMapComponent
+    MergeMapComponent,
+    MermapProductsComponent
   ],
   imports: [
     BrowserModule,

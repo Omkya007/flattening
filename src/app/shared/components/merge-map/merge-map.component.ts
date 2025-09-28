@@ -56,7 +56,7 @@ export class MergeMapComponent implements OnInit {
       mergeMap(users=> from(users)),
       mergeMap((user:Iuser)=>{
       return  this.User.getPost(user.id) //after sub we will post
-                    .pipe(
+                    .pipe(                //before subs we want to add user and posts in one array by using map and spread op
                       map((posts) =>{
                         return {
                           ...user,postArr:posts
